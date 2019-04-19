@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage{amsfonts}
+\usepackage[margin = 1 in]{geometry}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{longtable}
+
+\renewcommand{\baselinestretch}{2.0}
+
+\begin{document}
+\title{STA141C Homework 1}
+\author{Siyuan Li, Johnny Xu}
+\maketitle
+
+\section*{Question 1}
+\textbf{(a)}
+aa\\
+\textbf{(b)}
+This is a TRUE statement. The eigenvalue decomposition is only plausible for linearly independent square matrix. By the definition, the eigenvalue decomposition of a square matrix A is given by
+$$A = V \Lambda V^{-1}$$
+where V is the matrix attains all eigenvectors of A and $\Lambda$ is the diagonal matrix with corresponding eigenvalues on its diagonal. This particular transformation cannot be applied to non-square matrix because the matrix of eigenvectors is not necessarily a square matrix, which implies that we are not able to find its inverse matrix. Therefore, we would not be able to do the eigenvalue decomposition for non-square matrices. \\
+\textbf{(c)}
+This is a FALSE statement. While it is true that power method can be used to find eigenvalues, it can also be used to find singular values as the essence of the process of calculating both values are the same.
+
+For non-square matrices, we are not able to find its eigenvalue decomposition. Instead, we first take $A^{*} = A^{T}A$. Now we have a square matrix $A^{*}$ to work with. Then we would proceed to find the eigenvalues of $A^{*}$. Last, the singular values are defined to be $\sigma_{i} = \sqrt{\lambda_{i}}$ where $\lambda_{i}'s$ are the non-zero eigenvalues of $A^{*}$. 
+
+Therefore, we can conclude that the process of finding singular values is basically analogue to the process of calculating eigenvalues with several more step to take in the beginning. Thus, we can certainly use the Power Method to calculate singular values. \\
+\textbf{(d)}
+\end{document}
