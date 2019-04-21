@@ -26,4 +26,17 @@ For non-square matrices, we are not able to find its eigenvalue decomposition. I
 
 Therefore, we can conclude that the process of finding singular values is basically analogue to the process of calculating eigenvalues with several more step to take in the beginning. Thus, we can certainly use the Power Method to calculate singular values. \\
 \textbf{(d)}
+This is a FALSE statement. By the process of Singular Value Decomposition, we see that we can represent some non-square matrix A as 
+$$A = U\Sigma V^{T}$$
+The columns of matrix U is regarded as the \textbf{\textit{Left Singular Vector}} and the columns of matrix V is regarded as the \textbf{\textit{Right Singular Vector}}. We know that
+$$V^{T} = ||eigenvector(A^{T}A)^{T}|| = \begin{bmatrix}
+v_{1} \\ v_{2} \\ \cdots \\ v_{i}
+\end{bmatrix}$$
+$$ U = \begin{bmatrix}
+\frac{1}{\sigma_{1}}Av_{1} & \frac{1}{\sigma_{2}}Av_{2} & \cdots &  \frac{1}{\sigma_{i}}Av_{i}&  ||Nullspace(A^{T})||
+\end{bmatrix},
+\text{ where } \sigma_{i} = \sqrt{\lambda_{i}}$$
+Therefore, we can see that matrix $V^{T}$ and $U$ are orthonormal matrices and we can conclude that the left singular vectors are orthogonal to each other and the right singular vectors are orthogonal to each other. There is, however, no guarantee in this process that the left singular vectors are orthogonal to the right singular vectors. Therefore, the generalized statement saying that singualr vectors are all orthogonal to each other is FALSE. \\
+\textbf{(e)}
+
 \end{document}
